@@ -40,7 +40,7 @@ class GetListResultAPI: XCTestCase {
                     do {
                         let jsonDecoder = JSONDecoder()
                         let listResult = try jsonDecoder.decode(ListResult.self, from: listResult!)
-                        XCTAssertEqual(listResult.networks.applicable.first?.code, "DINERS")
+                        XCTAssertEqual(listResult.networks.applicable.first?.code, "AMEX")
                     } catch {
                         print("error : \(error)")
                         XCTFail(error.localizedDescription)
