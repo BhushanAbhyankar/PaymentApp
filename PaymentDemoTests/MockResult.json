@@ -1,0 +1,217 @@
+{
+  "links": {
+    "self": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g",
+    "lang": "https://resources.integration.oscato.com/resource/lang/ANDROID_TESTING/en_US/checkout.json"
+  },
+  "resultInfo": "5 applicable and 0 registered networks are found",
+  "interaction": {
+    "code": "PROCEED",
+    "reason": "OK"
+  },
+  "networks": {
+    "applicable": [
+      {
+        "code": "DINERS",
+        "label": "Diners Club",
+        "method": "CREDIT_CARD",
+        "grouping": "CREDIT_CARD",
+        "registration": "OPTIONAL",
+        "recurrence": "NONE",
+        "redirect": false,
+        "links": {
+          "logo": "https://resources.integration.oscato.com/resource/network/ANDROID_TESTING/en_US/DINERS/logo2x.png",
+          "self": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/DINERS",
+          "lang": "https://resources.integration.oscato.com/resource/lang/ANDROID_TESTING/en_US/DINERS.json",
+          "operation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/DINERS/charge",
+          "validation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/ANDROID_TESTING/en_US/DINERS/standard/validate"
+        },
+        "selected": false,
+        "inputElements": [
+          {
+            "name": "number",
+            "type": "numeric"
+          },
+          {
+            "name": "expiryMonth",
+            "type": "integer"
+          },
+          {
+            "name": "expiryYear",
+            "type": "integer"
+          },
+          {
+            "name": "verificationCode",
+            "type": "integer"
+          },
+          {
+            "name": "holderName",
+            "type": "string"
+          }
+        ],
+        "operationType": "CHARGE"
+      },
+      {
+        "code": "MAESTRO",
+        "label": "Maestro",
+        "method": "DEBIT_CARD",
+        "grouping": "DEBIT_CARD",
+        "registration": "OPTIONAL",
+        "recurrence": "NONE",
+        "redirect": false,
+        "links": {
+          "logo": "https://resources.integration.oscato.com/resource/network/ANDROID_TESTING/en_US/MAESTRO/logo2x.png",
+          "self": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/MAESTRO",
+          "lang": "https://resources.integration.oscato.com/resource/lang/ANDROID_TESTING/en_US/MAESTRO.json",
+          "operation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/MAESTRO/charge",
+          "validation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/ANDROID_TESTING/en_US/MAESTRO/standard/validate"
+        },
+        "selected": false,
+        "inputElements": [
+          {
+            "name": "holderName",
+            "type": "string"
+          },
+          {
+            "name": "number",
+            "type": "numeric"
+          },
+          {
+            "name": "expiryYear",
+            "type": "integer"
+          },
+          {
+            "name": "expiryMonth",
+            "type": "integer"
+          },
+          {
+            "name": "verificationCode",
+            "type": "integer"
+          }
+        ],
+        "operationType": "CHARGE"
+      },
+      {
+        "code": "SEPADD",
+        "label": "SEPA",
+        "method": "DIRECT_DEBIT",
+        "grouping": "DIRECT_DEBIT",
+        "registration": "OPTIONAL",
+        "recurrence": "NONE",
+        "redirect": false,
+        "links": {
+          "logo": "https://resources.integration.oscato.com/resource/network/ANDROID_TESTING/en_US/SEPADD/logo2x.png",
+          "self": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/SEPADD",
+          "lang": "https://resources.integration.oscato.com/resource/lang/ANDROID_TESTING/en_US/SEPADD.json",
+          "operation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/SEPADD/charge",
+          "validation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/ANDROID_TESTING/en_US/SEPADD/standard/validate"
+        },
+        "selected": false,
+        "inputElements": [
+          {
+            "name": "holderName",
+            "type": "string"
+          },
+          {
+            "name": "iban",
+            "type": "string"
+          },
+          {
+            "name": "bic",
+            "type": "string"
+          }
+        ],
+        "operationType": "CHARGE"
+      },
+      {
+        "code": "VISA",
+        "label": "Visa",
+        "method": "CREDIT_CARD",
+        "grouping": "CREDIT_CARD",
+        "registration": "OPTIONAL",
+        "recurrence": "NONE",
+        "redirect": false,
+        "links": {
+          "logo": "https://resources.integration.oscato.com/resource/network/ANDROID_TESTING/en_US/VISA/logo2x.png",
+          "self": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/VISA",
+          "lang": "https://resources.integration.oscato.com/resource/lang/ANDROID_TESTING/en_US/VISA.json",
+          "operation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/VISA/charge",
+          "validation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/ANDROID_TESTING/en_US/VISA/standard/validate"
+        },
+        "selected": false,
+        "inputElements": [
+          {
+            "name": "number",
+            "type": "numeric"
+          },
+          {
+            "name": "expiryMonth",
+            "type": "integer"
+          },
+          {
+            "name": "expiryYear",
+            "type": "integer"
+          },
+          {
+            "name": "verificationCode",
+            "type": "integer"
+          },
+          {
+            "name": "holderName",
+            "type": "string"
+          }
+        ],
+        "operationType": "CHARGE"
+      },
+      {
+        "code": "MASTERCARD",
+        "label": "Mastercard",
+        "method": "CREDIT_CARD",
+        "grouping": "CREDIT_CARD",
+        "registration": "OPTIONAL",
+        "recurrence": "NONE",
+        "redirect": false,
+        "links": {
+          "logo": "https://resources.integration.oscato.com/resource/network/ANDROID_TESTING/en_US/MASTERCARD/logo2x.png",
+          "self": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/MASTERCARD",
+          "lang": "https://resources.integration.oscato.com/resource/lang/ANDROID_TESTING/en_US/MASTERCARD.json",
+          "operation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/MASTERCARD/charge",
+          "validation": "https://api.integration.oscato.com/pci/v1/5f9ec3e736441d03e5559753ln6h650jmtg0t64hdv2idtgh3g/ANDROID_TESTING/en_US/MASTERCARD/standard/validate"
+        },
+        "selected": false,
+        "inputElements": [
+          {
+            "name": "number",
+            "type": "numeric"
+          },
+          {
+            "name": "expiryMonth",
+            "type": "integer"
+          },
+          {
+            "name": "expiryYear",
+            "type": "integer"
+          },
+          {
+            "name": "verificationCode",
+            "type": "integer"
+          },
+          {
+            "name": "holderName",
+            "type": "string"
+          }
+        ],
+        "operationType": "CHARGE"
+      }
+    ]
+  },
+  "operationType": "CHARGE",
+  "style": {
+    "language": "en_US"
+  },
+  "payment": {
+    "reference": "Shop/03-12-2018",
+    "amount": 120,
+    "currency": "EUR"
+  },
+  "integrationType": "MOBILE_NATIVE"
+}
